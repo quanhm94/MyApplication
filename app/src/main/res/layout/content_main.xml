@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,23 +11,41 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.quanh.myapplication.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="#d59c4e">
+    android:orientation="vertical"
+    android:background="#d59c4e"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi, I am Zombie!"
+        android:text="@string/greeting"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="30dp" />
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Greeting"
+        android:id="@+id/button2"
+        android:layout_gravity="right" />
+
+    <ImageButton
+        android:layout_width="222dp"
+        android:layout_height="301dp"
         android:id="@+id/imageButton"
         android:background="@mipmap/newspaper_zombie"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.18" />
+
+</LinearLayout>

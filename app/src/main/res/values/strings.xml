@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MyApplication</string>
+    <string name="greeting">Hi, I\'m Zombie!</string>
+    <string name="button">Hey, Click me, now!</string>
+    <string name="button2">Greeting!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_greeting">GreetingActivity</string>
 </resources>
